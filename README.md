@@ -11,3 +11,10 @@ Screenshot:
 * i3blocks
 * kitty
 * rofi
+
+## Installation
+
+```bash
+curl -fsSL https://shorturl.at/MRENP | sh
+```
+```
