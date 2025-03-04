@@ -12,6 +12,7 @@ Screenshot:
 * kitty
 * rofi
 * flameshot
+* nerd-fonts
 
 ## Installation
 
