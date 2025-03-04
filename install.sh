@@ -18,7 +18,7 @@ install_with_dnf() {
 
 # Функция для установки wget с использованием pacman (Arch Linux)
 install_with_pacman() {
-  sudo pacman -Sy --noconfirm git i3-wm i3blocks kitty rofi flameshot
+  sudo pacman -Sy --noconfirm git i3-wm i3blocks kitty rofi flameshot nerd-fonts
 }
 
 # Функция для установки wget с использованием zypper (openSUSE)
