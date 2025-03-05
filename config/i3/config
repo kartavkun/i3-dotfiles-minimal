@@ -12,10 +12,10 @@ bindsym Ctrl+$mod+Right workspace prev
 
 # Here is default keyboard layout. English is default, but you can add more layouts, separated by comma (e.g. us,ru)
 set $layouts us
-# Default bind for changing keyboard layout is Win+Space. If you want to change it, replace win_space_toggle to your prefered bind (e.g. alt_shift_toggle)
-set $changelang_toggle win_space_toggle
 # This is for keyboard layouts
-exec_always --no-startup-id setxkbmap -layout $layouts -option grp:$changelang
+# Default bind for changing keyboard layout is Win+Space. If you want to change it, replace win_space_toggle to your prefered bind (e.g. alt_shift_toggle)
+exec_always --no-startup-id setxkbmap -layout $layouts -option \
+grp:win_space_toggle
 
 # This line needs to add window, that asks for password to use some features in apps (Install it with `sudo pacman -S polkit-kde-agent`)
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
