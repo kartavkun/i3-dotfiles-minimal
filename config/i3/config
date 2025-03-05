@@ -39,7 +39,7 @@ set $pos top
 set $tray HDMI-A-0
 
 # If you want to use trainer for osu!, you need to install cosu-trainer (guide in README.md), uncomment this line and restart i3 config with Win+Shift+R
-#exec --no-startup-id osumem
+# exec --no-startup-id osumem
 
 # THEN IS DEFAULT CONFIG
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
