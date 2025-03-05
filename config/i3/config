@@ -11,17 +11,22 @@ bindsym Ctrl+$mod+Left workspace next
 bindsym Ctrl+$mod+Right workspace prev
 
 # Here is default keyboard layout. English is default, but you can add more layouts, separated by comma (e.g. us,ru)
-set $layouts us
+set $layouts us,ru
+# set $changelang_toggle win_space_toggle
 # This is for keyboard layouts
 # Default bind for changing keyboard layout is Win+Space. If you want to change it, replace win_space_toggle to your prefered bind (e.g. alt_shift_toggle)
 exec_always --no-startup-id setxkbmap -layout $layouts -option \
-grp:win_space_toggle
+grp:alt_shift_toggle
 
 # This line needs to add window, that asks for password to use some features in apps (Install it with `sudo pacman -S polkit-kde-agent`)
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 
 # This line needs to restart OpenTabletDriver after restart i3 config with Win+Shift+R (For bug issues)
 exec_always systemctl --user restart opentabletdriver.service --now
+
+# This needs if you want to make your xrandr settings starts with i3 (monitor positioning, refresh rate, resolutions, etc.)
+# Info in guide
+# exec_always --no-startup-id xrandr {settings}
 
 # If you want to add background image, install feh (sudo pacman -S feh), uncomment this line and edit path to your image
 #exec_always --no-startup-id feh --bg-scale {set path to your background image}
@@ -31,7 +36,7 @@ set $pos top
 # Unfortunately, i3bar doesn't left and right position, so you can use other bars, like polybar
 
 # If you want to change tray output, type xrandr in terminal, set in {} output name, uncomment this line and restart i3 config with Win+Shift+R
-# set $tray {your preferred output}
+set $tray HDMI-A-0
 
 # If you want to use trainer for osu!, you need to install cosu-trainer (guide in README.md), uncomment this line and restart i3 config with Win+Shift+R
 #exec --no-startup-id osumem
