@@ -17,5 +17,5 @@ Screenshot:
 ## Installation
 
 ```bash
-curl -fsSL https://shorturl.at/MRENP | sh
+curl -fsSL https://raw.githubusercontent.com/kartavkun/i3-dotfiles-minimal/main/install.sh | sh
 ```
